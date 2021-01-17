@@ -23,6 +23,10 @@ i {
   text-align: center;
 }
 
+.link-open {
+  padding-left: 170px;
+}
+
 .card-img {
   max-width: 200px;
 }
