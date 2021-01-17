@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d4c7bc37f9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Check your temperature</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Your Weather Channel</h1>
+    <br />
+    <form id="city-form">
+      <input class="form-control" type="text" id="city-input" placeholder="Type your city" />
+      <input type="submit" value="Search 🔎" id="search-city">
+      <input type="submit" value="Current location 📍" id="current-city">
+    </form>
+    <br />
+    <div class="row">
+      <div class="card mb-2 col-6" style="max-width: 550px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="images/sunny.svg" class="card-img" alt="sunny" />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <h5 class="card-title city" id="city-card">Paris</h5>
+              <p class="card-text" id="current-time"> </p>
+              <p class="card-text current" id="temperature-now">19ºC</p>
+              <!--ul>
+                <li class="inline-temperature"><a id="celcius">ºC</a></li>
+                <li class="inline-temperature">|</li>
+                <li class="inline-temperature"><a id="farenheit">ºF</a></li>
+              </ul-->
+              <ul>
+                <li class="inline-temperature">Max</li>
+                <li class="inline-temperature" id="max-today">20</li>
+                <li class="inline-temperature">/</li>
+                <li class="inline-temperature">Min</li>
+                <li class="inline-temperature" id="min-today">10</li>
+              </ul>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-2 col-6" style="max-width: 550px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <h5 class="card-title city">Tomorrow</h5>
+            <img src="images/cloud.svg" class="card-img" alt="sunny" />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body"></div>
+
+            <p class="card-text current">16ºC</p>
+            <p class="card-text range">19ºC/6ºC</p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <i class="fas fa-cloud-sun"></i>
+        <div class="card-body">
+          <h5 class="card-title">Mon</h5>
+          <p class="card-text next">19ºC/7ºC</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fas fa-cloud-sun"></i>
+        <div class="card-body">
+          <h5 class="card-title">Tue</h5>
+          <p class="card-text next">19ºC/7ºC</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-cloud-sun-rain"></i>
+        <div class="card-body">
+          <h5 class="card-title">Wed</h5>
+          <p class="card-text next">19ºC/7ºC</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fas fa-cloud-showers-heavy"></i>
+        <div class="card-body">
+          <h5 class="card-title">Thu</h5>
+          <p class="card-text next">19ºC/7º</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fas fa-cloud-sun"></i>
+        <div class="card-body">
+          <h5 class="card-title">Fri</h5>
+          <p class="card-text next">19ºC/7ºC</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class="fas fa-sun"></i>
+        <div class="card-body">
+          <h5 class="card-title">Sat</h5>
+          <p class="card-text next">19ºC/7ºC</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+  ;
+</body>
+
+</html>

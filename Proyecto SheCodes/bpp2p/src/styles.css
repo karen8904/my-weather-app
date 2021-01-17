@@ -1,0 +1,88 @@
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 0;
+  color: #120078;
+}
+
+div {
+  font-family: "Nerko One", cursive;
+  display: block;
+  margin: 0 auto;
+}
+
+h5 {
+  color: #ea2c62;
+}
+
+i {
+  font-size: 50px;
+  text-align: center;
+}
+
+.card-img {
+  max-width: 200px;
+}
+
+.city {
+  color: #ec5858;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.current {
+  padding: 0;
+  margin: 0;
+  color: #fd8c04;
+  font-size: 40px;
+}
+
+.range {
+  padding: 0;
+  margin: 0;
+  color: #93abd3;
+  font-size: 30px;
+}
+
+.card-img-top {
+  display: block;
+  margin: 0 auto;
+  max-width: 70px;
+}
+.fa-cloud-showers-heavy {
+  color: #0278ae;
+}
+.fa-cloud-sun {
+  color: #ffd57e;
+}
+.fa-cloud-sun-rain {
+  color: #51adcf;
+}
+.fa-sun {
+  color: #fca652;
+}
+
+.next {
+  color: #9d0191;
+}
+
+.site {
+  display: block;
+  margin: 0 auto;
+}
+
+.inline-temperature {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  display: inline;
+  color: #93abd3;
+}
+
+.inline-temperature:hover {
+  cursor: pointer;
+}
