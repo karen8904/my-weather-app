@@ -107,10 +107,16 @@ function showTemperaturenow(response) {
   let maxNow = document.querySelector("#max-today");
   let min = Math.round(response.data.main.temp_min);
   let minNow = document.querySelector("#min-today");
+  let humidity = document.querySelector("#humidity");
+  let humidityNow = Math.round(response.data.main.humidity);
+  let wind = document.querySelector("#wind");
+  let windNow = Math.round(response.data.wind.speed);
   cityApp.innerHTML = `${city}`;
   temperatureNow.innerHTML = `${temperature}ºC`;
   maxNow.innerHTML = `${max}ºC`;
   minNow.innerHTML = `${min}ºC`;
+  humidity.innerHTML = `Humidity: ${humidityNow}%`;
+  wind.innerHTML = `Wind: ${windNow} Km/H`;
   console.log(response);
 }
 
@@ -136,11 +142,17 @@ function showTemperature(response) {
   let maxNow = document.querySelector("#max-today");
   let min = Math.round(response.data.main.temp_min);
   let minNow = document.querySelector("#min-today");
+  let humidity = document.querySelector("#humidity");
+  let humidityNow = Math.round(response.data.main.humidity);
+  let wind = document.querySelector("#wind");
+  let windNow = Math.round(response.data.wind.speed);
 
   cityApp.innerHTML = `${cityWrote.value}`;
   temperatureNow.innerHTML = `${temperature}ºC`;
   maxNow.innerHTML = `${max}ºC`;
   minNow.innerHTML = `${min}ºC`;
+  humidity.innerHTML = `Humidity: ${humidityNow}%`;
+  wind.innerHTML = `Wind: ${windNow} Km/H`;
   console.log(response);
 }
 

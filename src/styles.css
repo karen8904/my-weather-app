@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-color: #a7c5eb;
 }
 h1 {
   text-align: center;
@@ -23,8 +23,8 @@ i {
   text-align: center;
 }
 
-.link-open {
-  padding-left: 170px;
+form {
+  margin: 0 auto;
 }
 
 .card-img {

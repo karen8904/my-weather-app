@@ -18,7 +18,7 @@
   <div class="container">
     <h1>Your Weather Channel</h1>
     <br />
-    <form id="city-form">
+    <form id="city-form" style="max-width: 550px;">
       <input class="form-control" type="text" id="city-input" placeholder="Type your city" />
       <input type="submit" value="Search 🔎" id="search-city">
       <input type="submit" value="Current location 📍" id="current-city">
@@ -29,49 +29,44 @@
         <div class="row no-gutters">
           <div class="col-md-4">
             <img src="images/sunny.svg" class="card-img" alt="sunny" />
+
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title city" id="city-card">Paris</h5>
+              <h5 class="card-title city" id="city-card"></h5>
+              <p class="card-text current" id="temperature-now"></p>
               <p class="card-text" id="current-time"> </p>
-              <p class="card-text current" id="temperature-now">19ºC</p>
-              <!--ul>
+
+              <p class="card-text" id="humidity"> </p>
+              <p class="card-text" id="wind"></p>
+            </div>
+
+
+
+
+            <!--ul>
                 <li class="inline-temperature"><a id="celcius">ºC</a></li>
                 <li class="inline-temperature">|</li>
                 <li class="inline-temperature"><a id="farenheit">ºF</a></li>
               </ul-->
-              <ul>
-                <li class="inline-temperature">Max</li>
-                <li class="inline-temperature" id="max-today">20</li>
-                <li class="inline-temperature">/</li>
-                <li class="inline-temperature">Min</li>
-                <li class="inline-temperature" id="min-today">10</li>
-              </ul>
+            <ul>
+              <li class="inline-temperature">Max</li>
+              <li class="inline-temperature" id="max-today">20</li>
+              <li class="inline-temperature">/</li>
+              <li class="inline-temperature">Min</li>
+              <li class="inline-temperature" id="min-today">10</li>
 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="card mb-2 col-6" style="max-width: 550px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <h5 class="card-title city">Tomorrow</h5>
-            <img src="images/cloud.svg" class="card-img" alt="sunny" />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body"></div>
+            </ul>
 
-            <p class="card-text current">16ºC</p>
-            <p class="card-text range">19ºC/6ºC</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
             </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="row">
+
     <div class="card-group">
       <div class="card">
         <i class="fas fa-cloud-sun"></i>
@@ -117,10 +112,18 @@
         </div>
       </div>
     </div>
+
   </div>
-  <p>
-    <a class="link-open" href="https://github.com/karen8904/my-weather-app">Open-source code</a>, by Karen Mora
-  </p>
+  <div class="row">
+    <p style="margin: 0 auto;">
+
+      <a class="link-open" href="https://github.com/karen8904/my-weather-app">Open-source
+        code</a>, by Karen Mora
+
+    </p>
+  </div>
+  </div>
+
   <script src="src/index.js"></script>
 </body>
 
