@@ -153,6 +153,7 @@ function showTemperature(response) {
   let wind = document.querySelector("#wind");
   let windNow = Math.round(response.data.wind.speed);
   let icon = document.querySelector("#icon");
+  let weatherDescription = document.querySelector("#weatherDescription");
 
   cityApp.innerHTML = `${cityWrote.value}`;
   temperatureNow.innerHTML = `${temperature}ºC`;
@@ -164,6 +165,7 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  weatherDescription.innerHTML = response.data.weather[0].description;
   console.log(response);
 }
 

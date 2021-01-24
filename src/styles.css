@@ -95,3 +95,8 @@ form {
   padding: 25px;
   margin: 25px;
 }
+
+.card-text {
+  text-transform: capitalize;
+  font-size: 18px;
+}
