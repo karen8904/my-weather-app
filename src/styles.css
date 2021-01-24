@@ -90,3 +90,8 @@ form {
 .inline-temperature:hover {
   cursor: pointer;
 }
+
+.generalIcon {
+  padding: 25px;
+  margin: 25px;
+}
