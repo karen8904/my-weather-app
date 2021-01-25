@@ -1,56 +1,3 @@
-//let weather = {
-//paris: {
-//temp: 19.7,
-//humidity: 80
-//},
-//tokyo: {
-// temp: 17.3,
-//humidity: 50
-//},
-//lisbon: {
-// temp: 30.2,
-//humidity: 20
-//},
-//"san francisco": {
-//temp: 20.9,
-//humidity: 100
-//},
-//moscow: {
-//temp: -5,
-//humidity: 20
-//}
-//};
-
-//console.log(weather);
-
-//let city = prompt("Enter your city?");
-
-//if (weather[city]) {
-//let humid = weather[city].humidity;
-//let tempF = Math.round(weather[city].temp * 9) / 5 + 32;
-//alert(
-//`It is currently ${weather[city].temp}°C (${tempF}°F)🌥 in ${city} with a humidity of ${humid}💧`
-//);
-//} else {
-//alert(
-//  `Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city} 🤓`
-// );
-//}
-
-//Homework week 4
-//challenge1
-//⏰Feature #1
-//In your project, display the current date and time using JavaScript: Tuesday 16:00
-
-//function writeDate(){
-//let now = new Date();
-//now.innerHTML = (`Current time is ${now}`);
-//}
-
-//let current = document.querySelector("#current");
-//writeDate(current);
-
-//format date current location:
 let now = new Date();
 let day = [
   "Sunday",
@@ -75,39 +22,6 @@ function formatDate(timestamp) {
   return `${day}`;
 }
 
-//Challenge 2
-
-//function sendCity(event) {
-//event.preventDefault();
-//let cityWrote = document.querySelector("#city-input");
-//let cityApp = document.querySelector("#city-card");
-//cityApp.innerHTML = `${cityWrote.value}`;
-//}
-
-//let mainCity = document.querySelector("#city-form");
-//mainCity.addEventListener("submit", sendCity);
-
-//Challenge 3
-
-//function selectCelcius(event) {
-//event.preventDefault();
-//let temperatureNowC = document.querySelector("#temperature-now");
-//temperatureNowC.innerHTML = `19ºC`;
-//}
-
-//function selecFarenheit(event) {
-//event.preventDefault();
-//let temperatureNowF = document.querySelector("#temperature-now");
-//temperatureNowF.innerHTML = `65ºF`
-//}
-
-//let celcius = document.querySelector("#celcius");
-//celcius.addEventListener("click", selectCelcius);
-
-//let farenheit = document.querySelector("#farenheit");
-//farenheit.addEventListener("click", selecFarenheit);
-
-// change current temperature (from current city)
 function showTemperaturenow(response) {
   console.log(response);
   let temperature = Math.round(response.data.main.temp);
