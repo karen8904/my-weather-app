@@ -52,24 +52,6 @@ form {
   font-size: 30px;
 }
 
-.card-img-top {
-  display: block;
-  margin: 0 auto;
-  max-width: 70px;
-}
-.fa-cloud-showers-heavy {
-  color: #0278ae;
-}
-.fa-cloud-sun {
-  color: #ffd57e;
-}
-.fa-cloud-sun-rain {
-  color: #51adcf;
-}
-.fa-sun {
-  color: #fca652;
-}
-
 .next {
   color: #9d0191;
 }
